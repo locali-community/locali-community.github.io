@@ -52,7 +52,22 @@
             background: linear-gradient(to bottom, rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.9));
             z-index: 1;
         }
+.section-background {
+    background-image: url('path-to-background-pattern.svg');
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    background-position: center;
+}
 
+.hero-decoration {
+    position: absolute;
+    right: -5%;
+    top: 10%;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    opacity: 0.5;
+}
         .floating-cta {
             animation: float 3s ease-in-out infinite;
         }
@@ -318,6 +333,38 @@
         </div>
     </section>
 
+  <!-- About Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold gradient-text mb-4">
+                    Our Story
+                </h2>
+                <p class="text-gray-400">Building bridges across cultures at TH OWL</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <img src="/api/placeholder/600/400" alt="Team" class="rounded-2xl shadow-2xl">
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-6">From Vision to Reality</h3>
+                    <p class="text-gray-300 mb-6">
+                        Started by a group of passionate students at TH OWL, Locali was born from a simple observation: 
+                        despite having over 6,000 students from 77 countries, our campus lacked the vibrant community it deserved.
+                    </p>
+                    <p class="text-gray-300 mb-6">
+                        With support from the university's 
+                        entrepreneurship program, we're transforming how students connect and engage on campus.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#team" class="text-indigo-400 hover:text-indigo-300 transition-colors">Meet the Team</a>
+                        <a href="#vision" class="text-indigo-400 hover:text-indigo-300 transition-colors">Our Vision</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
     <!-- Footer -->
     <footer class="py-20 bg-gray-900">
         <div class="max-w-6xl mx-auto px-6">
