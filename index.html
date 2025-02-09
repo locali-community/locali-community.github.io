@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locali - Transform Your Campus Life | The Future of Student Communities</title>
+    <meta name="description" content="Transform your campus life with Locali's smart community platform. Connect with students from 77 countries, discover events, and build meaningful communities at TH OWL.">
+    <meta name="keywords" content="campus community, international students, TH OWL, student events, campus life, university social platform">
+    <meta name="author" content="Locali">
+    <meta property="og:title" content="Locali - The Future of Campus Communities">
+    <meta property="og:description" content="Transform your university experience with Locali's smart community platform.">
+    <meta property="og:image" content="/api/placeholder/1200/630">
+    <meta property="og:url" content="https://locali.th-owl.de">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 1s, transform 1s;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.9));
+            z-index: 1;
+        }
+
+        .floating-cta {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* Mobile menu styles */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(17, 24, 39, 0.95);
+            backdrop-filter: blur(8px);
+            z-index: 40;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-menu {
+                display: none;
+            }
+            
+            .menu-button {
+                display: block;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .menu-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-gradient-to-b from-gray-900 to-gray-800 backdrop-blur-md z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Locali
+            </div>
+            <div class="desktop-menu flex items-center gap-8">
+                <a href="#features" class="hover:text-blue-400 transition-colors">Features</a>
+                <a href="#stories" class="hover:text-blue-400 transition-colors">Stories</a>
+                <a href="#community" class="hover:text-blue-400 transition-colors">Community</a>
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <button class="bg-gradient-to-r from-blue-400 to-purple-500 px-6 py-2 rounded-full transition-all hover:scale-105">
+                    Get Started
+                </button>
+            </div>
+            <button class="menu-button text-white" onclick="toggleMobileMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="flex justify-end mb-8">
+            <button onclick="toggleMobileMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col gap-6 text-center">
+            <a href="#features" class="text-xl hover:text-blue-400 transition-colors" onclick="toggleMobileMenu()">Features</a>
+            <a href="#stories" class="text-xl hover:text-blue-400 transition-colors" onclick="toggleMobileMenu()">Stories</a>
+            <a href="#community" class="text-xl hover:text-blue-400 transition-colors" onclick="toggleMobileMenu()">Community</a>
+            <a href="#about" class="text-xl hover:text-blue-400 transition-colors" onclick="toggleMobileMenu()">About</a>
+            <button class="bg-gradient-to-r from-blue-400 to-purple-500 px-6 py-3 rounded-full text-lg">
+                Get Started
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10 fade-in pb-6">
+            <span class="bg-blue-500/20 text-blue-400 px-4 py-1 rounded-full text-sm mb-4 inline-block">
+                🎓 Connecting 77 Cultures at TH OWL
+            </span>
+            <h1 class="text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                From Silent Halls to<br>Thriving Communities
+            </h1>
+            <p class="text-xl text-gray-300 mb-8">
+                Transform your campus experience. Connect instantly. Create memories.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <button class="bg-blue-500 hover:bg-blue-400 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 flex items-center gap-2">
+                    Join Now 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+                <button class="bg-white/10 hover:bg-white/20 px-8 py-4 rounded-full text-lg font-semibold transition-all">
+                    Watch Stories
+                </button>
+            </div>
+            <div class="scroll-indicator absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 relative" id="features">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+                    Connect. Create. Celebrate.
+                </h2>
+                <p class="text-gray-400">Everything you need to transform your campus experience</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card bg-gray-800/50 p-8 rounded-2xl backdrop-blur-lg">
+                    <div class="bg-blue-500/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Discover Events</h3>
+                    <p class="text-gray-400">Find and join events that match your interests, from study groups to cultural celebrations.</p>
+                </div>
+                <div class="feature-card bg-gray-800/50 p-8 rounded-2xl backdrop-blur-lg">
+                    <div class="bg-purple-500/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Build Communities</h3>
+                    <p class="text-gray-400">Create and join micro-communities based on shared interests and cultures.</p>
+                </div>
+                <div class="feature-card bg-gray-800/50 p-8 rounded-2xl backdrop-blur-lg">
+                    <div class="bg-pink-500/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Connect Instantly</h3>
+                    <p class="text-gray-400">Chat, coordinate, and meet up with fellow students in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-20 bg-gray-800/50" id="stories">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+                    Real Stories, Real Connections
+                </h2>
+                <p class="text-gray-400">Join 2,400+ students already transforming their campus experience</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900/50 p-8 rounded-2xl backdrop-blur-lg">
+                    <p class="text-gray-300 mb-6">"The orientation week was great - lots of activities and people. But then everything just... stopped. Locali changed that completely."</p>
+                    <div class="flex items-center gap-4">
+                      <img src="/api/placeholder/40/40" alt="Luis" class="rounded-full">
+                        <div>
+                            <p class="font-semibold">Luis</p>
+                            <p class="text-gray-400 text-sm">Master's Student from Mexico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-900/50 p-8 rounded-2xl backdrop-blur-lg">
+                    <p class="text-gray-300 mb-6">"I've found my photography group through Locali. Now we meet every weekend for photo walks around Lemgo!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="/api/placeholder/40/40" alt="Maria" class="rounded-full">
+                        <div>
+                            <p class="font-semibold">Maria</p>
+                            <p class="text-gray-400 text-sm">Design Student from Spain</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-900/50 p-8 rounded-2xl backdrop-blur-lg">
+                    <p class="text-gray-300 mb-6">"Finally, I can practice my German with native speakers regularly. The language exchange community is amazing!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="/api/placeholder/40/40" alt="Chen" class="rounded-full">
+                        <div>
+                            <p class="font-semibold">Chen</p>
+                            <p class="text-gray-400 text-sm">Computer Science Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 bg-gray-800/30 rounded-2xl backdrop-blur-lg">
+                    <div class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">77</div>
+                    <div class="text-gray-400">Countries Represented</div>
+                </div>
+                <div class="p-6 bg-gray-800/30 rounded-2xl backdrop-blur-lg">
+                    <div class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">6,000</div>
+                    <div class="text-gray-400">Students Connected</div>
+                </div>
+                <div class="p-6 bg-gray-800/30 rounded-2xl backdrop-blur-lg">
+                    <div class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">3</div>
+                    <div class="text-gray-400">Campuses United</div>
+                </div>
+                <div class="p-6 bg-gray-800/30 rounded-2xl backdrop-blur-lg">
+                    <div class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">2,400+</div>
+                    <div class="text-gray-400">Active Users</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-8">
+                Ready to Transform Your Campus Life?
+            </h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#" class="bg-gray-800 hover:bg-gray-700 px-8 py-4 rounded-xl inline-flex items-center gap-2 transition-all hover:scale-105">
+                    <img src="/api/placeholder/24/24" alt="App Store" class="w-6">
+                    <div class="text-left">
+                        <p class="text-xs text-gray-400">Download on the</p>
+                        <p class="font-semibold">App Store</p>
+                    </div>
+                </a>
+                <a href="#" class="bg-gray-800 hover:bg-gray-700 px-8 py-4 rounded-xl inline-flex items-center gap-2 transition-all hover:scale-105">
+                    <img src="/api/placeholder/24/24" alt="Play Store" class="w-6">
+                    <div class="text-left">
+                        <p class="text-xs text-gray-400">Get it on</p>
+                        <p class="font-semibold">Google Play</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+                        Locali
+                    </div>
+                    <p class="text-gray-400">Transforming campus life through meaningful connections</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#stories" class="hover:text-white transition-colors">Stories</a></li>
+                        <li><a href="#community" class="hover:text-white transition-colors">Community</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#terms" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#gdpr" class="hover:text-white transition-colors">GDPR</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Newsletter</h4>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-400">
+                        <button class="w-full bg-gradient-to-r from-blue-400 to-purple-500 px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+                © 2025 Locali. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Fade-in animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(element => {
+                element.classList.add('visible');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
