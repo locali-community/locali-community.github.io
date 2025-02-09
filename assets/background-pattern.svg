@@ -1,0 +1,27 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100" height="100" fill="none"/>
+  
+  <!-- Connected Dots Pattern -->
+  <g fill="rgba(147, 197, 253, 0.1)"> <!-- Light blue with low opacity -->
+    <circle cx="10" cy="10" r="2"/>
+    <circle cx="40" cy="20" r="2"/>
+    <circle cx="70" cy="15" r="2"/>
+    <circle cx="20" cy="40" r="2"/>
+    <circle cx="50" cy="45" r="2"/>
+    <circle cx="80" cy="35" r="2"/>
+    <circle cx="30" cy="70" r="2"/>
+    <circle cx="60" cy="75" r="2"/>
+    <circle cx="90" cy="65" r="2"/>
+  </g>
+  
+  <!-- Connection Lines -->
+  <g stroke="rgba(147, 197, 253, 0.05)" stroke-width="1">
+    <line x1="10" y1="10" x2="40" y2="20"/>
+    <line x1="40" y1="20" x2="70" y2="15"/>
+    <line x1="20" y1="40" x2="50" y2="45"/>
+    <line x1="50" y1="45" x2="80" y2="35"/>
+    <line x1="30" y1="70" x2="60" y2="75"/>
+    <line x1="60" y1="75" x2="90" y2="65"/>
+  </g>
+</svg>
