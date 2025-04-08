@@ -17,14 +17,14 @@
     
     <style>
         .gradient-text {
-            background: linear-gradient(90deg, #4F46E5 0%, #10B981 100%);
+            background: linear-gradient(90deg, #3B82F6 0%, #8B5CF6 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
         
         .gradient-bg {
-            background: linear-gradient(135deg, #4F46E5 0%, #10B981 100%);
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
         }
         
         .hero-section {
@@ -33,8 +33,9 @@
         }
         
         .hero-overlay {
-            background: rgba(15, 23, 42, 0.85);
+            background: rgba(17, 24, 39, 0.9);
         }
+      
         
         .feature-icon {
             width: 60px;
@@ -46,21 +47,23 @@
             margin-bottom: 1.5rem;
             color: white;
             font-size: 1.5rem;
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
         }
         
         .testimonial-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(31, 42, 68, 0.8);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .stats-card {
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(31, 42, 68, 0.5);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .nav-link {
             position: relative;
+            color: #D1D5DB;
         }
         
         .nav-link:after {
@@ -70,12 +73,16 @@
             height: 2px;
             bottom: -2px;
             left: 0;
-            background: linear-gradient(90deg, #4F46E5 0%, #10B981 100%);
+            background: linear-gradient(90deg, #3B82F6 0%, #8B5CF6 100%);
             transition: width 0.3s;
         }
         
         .nav-link:hover:after {
             width: 100%;
+        }
+        
+        .nav-link:hover {
+            color: #3B82F6;
         }
         
         .hover-scale {
@@ -91,35 +98,34 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: rgba(15, 23, 42, 0.95);
+            background: rgba(17, 24, 39, 0.95);
             backdrop-filter: blur(10px);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             z-index: 100;
         }
 
         .problem-card {
-            background: rgba(239, 68, 68, 0.1);
-            border-left: 4px solid #EF4444;
+            background: rgba(31, 42, 68, 0.5);
+            border-left: 4px solid #3B82F6;
         }
         
         .solution-card {
-            background: rgba(16, 185, 129, 0.1);
-            border-left: 4px solid #10B981;
+            background: rgba(31, 42, 68, 0.5);
+            border-left: 4px solid #8B5CF6;
         }
         
         .guest-mode-feature {
-            background: rgba(99, 102, 241, 0.1);
-            border: 1px solid rgba(99, 102, 241, 0.3);
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
         }
         
         .automated-posting {
-            background: rgba(236, 72, 153, 0.1);
-            border: 1px solid rgba(236, 72, 153, 0.3);
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
         }
         
-        /* New styles for media sections */
         .media-container {
-            background: rgba(15, 23, 42, 0.7);
+            background: rgba(17, 24, 39, 0.7);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
             backdrop-filter: blur(10px);
@@ -140,14 +146,14 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 24px;
             padding: 12px;
-            background: #1a1a1a;
+            background: #111827;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             max-width: 300px;
             margin: 0 auto;
         }
         
         .storyboard-card {
-            background: rgba(15, 23, 42, 0.7);
+            background: rgba(17, 24, 39, 0.7);
             border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: transform 0.3s;
@@ -190,7 +196,6 @@
             transform: scale(1.05);
         }
         
-        /* Lightbox styles */
         .lightbox {
             display: none;
             position: fixed;
@@ -219,13 +224,13 @@
         }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+<body class="bg-gray-900 text-white font-sans antialiased">
     <!-- Navigation -->
     <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
-                    <a href="#" class="text-2xl font-bold gradient-text">Locali</a>
+                    <a href="#" class="text-2xl font-bold text-blue-400">Locali</a>
                 </div>
                 
                 <div class="hidden md:flex items-center space-x-8">
@@ -234,7 +239,7 @@
                     <a href="#media" class="nav-link">Media</a>
                     <a href="#testimonials" class="nav-link">Testimonials</a>
                     <a href="#contact" class="nav-link">Contact</a>
-                    <a href="#demo" class="bg-white text-gray-900 px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition">Request Demo</a>
+                    <a href="#demo" class="bg-blue-500 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-600 transition">Request Demo</a>
                 </div>
                 
                 <button class="md:hidden text-gray-300 focus:outline-none">
@@ -246,35 +251,41 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section pt-32 pb-20">
-        <div class="hero-overlay absolute inset-0"></div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-12 lg:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                        <span class="gradient-text">Transform Your Campus</span><br>
-                        Into a Connected Community
-                    </h1>
-                    <p class="text-xl text-gray-300 mb-8 max-w-lg">
-                        Locali is the comprehensive white-label platform that bridges the gap between students, faculty and the surrounding community through a unified digital experience.
-                    </p>
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#demo" class="gradient-bg text-white px-8 py-3 rounded-full font-medium text-center hover:opacity-90 transition">Request Demo</a>
-                        <a href="#features" class="bg-white/10 border border-white/20 px-8 py-3 rounded-full font-medium text-center hover:bg-white/20 transition">Explore Features</a>
-                    </div>
-                </div>
-                <div class="lg:w-1/2 flex justify-center">
-                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Students using Locali app" class="rounded-xl shadow-2xl max-w-md w-full">
-                </div>
+   <!-- Hero Section -->
+<section class="hero-bg h-screen flex items-center justify-center text-center px-6 pt-20">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+        <!-- Left Side: Text Content -->
+        <div class="md:w-1/2 text-left fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Your Digital Campus,<br>Connected Like Never Before
+            </h1>
+            <p class="text-xl text-gray-300 mb-8">
+                Locali brings students, faculty, and communities together in one vibrant platform.<br>
+                Proven at TH OWL with 6,000+ students from 77 countries.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#demo" class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full text-lg font-medium transition">Join Now</a>
+                <a href="#features" class="bg-transparent border border-white hover:bg-white/10 px-8 py-3 rounded-full text-lg font-medium transition">Learn More</a>
             </div>
         </div>
-    </section>
-
+        <!-- Right Side: Image -->
+        <div class="md:w-1/2 mt-8 md:mt-0">
+            <img src="assets/images/mobile-screenshot.png" alt="Locali App Screenshot" class="max-w-full h-auto device-mockup mobile">
+        </div>
+    </div>
+    <div class="absolute bottom-10">
+        <a href="#features" class="scroll-btn text-gray-300">
+            <svg class="h-8 w-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </a>
+    </div>
+</section>
+  
     <!-- Logo Cloud -->
     <section class="py-12 bg-gray-800">
         <div class="max-w-7xl mx-auto px-6">
-            <p class="text-center text-gray-400 mb-8">Trusted by leading universities worldwide</p>
+            <p class="text-center text-gray-300 mb-8">Trusted by leading universities worldwide</p>
             <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
                 <div class="text-2xl font-bold text-gray-300">TH OWL</div>
                 <div class="text-2xl font-bold text-gray-300">HM München</div>
@@ -286,13 +297,13 @@
     </section>
 
     <!-- Student Problems Section -->
-    <section class="py-20 bg-gray-800/50">
+    <section class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">
                     <span class="gradient-text">The Challenges Students Face</span>
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Real struggles we've heard from students across campuses
                 </p>
             </div>
@@ -302,8 +313,8 @@
                     <div class="flex items-center mb-4">
                         <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Sophie, International Student</h4>
-                            <p class="text-gray-400 text-sm">Master's in Computer Science</p>
+                            <h4 class="font-bold text-white">Sophie, International Student</h4>
+                            <p class="text-gray-300 text-sm">Master's in Computer Science</p>
                         </div>
                     </div>
                     <p class="text-gray-300 italic">
@@ -315,8 +326,8 @@
                     <div class="flex items-center mb-4">
                         <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Raj, Exchange Student</h4>
-                            <p class="text-gray-400 text-sm">Mechanical Engineering</p>
+                            <h4 class="font-bold text-white">Raj, Exchange Student</h4>
+                            <p class="text-gray-300 text-sm">Mechanical Engineering</p>
                         </div>
                     </div>
                     <p class="text-gray-300 italic">
@@ -328,8 +339,8 @@
                     <div class="flex items-center mb-4">
                         <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Lena, Local Student</h4>
-                            <p class="text-gray-400 text-sm">Business Administration</p>
+                            <h4 class="font-bold text-white">Lena, Local Student</h4>
+                            <p class="text-gray-300 text-sm">Business Administration</p>
                         </div>
                     </div>
                     <p class="text-gray-300 italic">
@@ -341,8 +352,8 @@
                     <div class="flex items-center mb-4">
                         <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Markus, Student Leader</h4>
-                            <p class="text-gray-400 text-sm">Student Council</p>
+                            <h4 class="font-bold text-white">Markus, Student Leader</h4>
+                            <p class="text-gray-300 text-sm">Student Council</p>
                         </div>
                     </div>
                     <p class="text-gray-300 italic">
@@ -360,53 +371,53 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">
                     <span class="gradient-text">Your Brand, Your Platform</span>
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     The power of a white-label solution for your university
                 </p>
             </div>
             
             <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
                 <div>
-                    <h3 class="text-2xl font-bold mb-6">What is a White-Label Solution?</h3>
-                    <p class="text-gray-400 mb-6">
+                    <h3 class="text-2xl font-bold mb-6 text-white">What is a White-Label Solution?</h3>
+                    <p class="text-gray-300 mb-6">
                         Locali provides a fully customizable platform that becomes your university's own branded app. While we handle all the complex technology and maintenance, your students experience a seamless digital campus that feels 100% native to your institution.
                     </p>
-                    <p class="text-gray-400">
+                    <p class="text-gray-300">
                         The app is published under your university's name in app stores, with your branding, colors, and identity - while benefiting from all the features we've developed through years of campus community research.
                     </p>
                 </div>
-                <div class="bg-gray-800/50 p-8 rounded-xl">
+                <div class="bg-gray-800 p-8 rounded-xl">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="White label app example" class="rounded-lg shadow-xl">
                 </div>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-800/50 p-8 rounded-xl hover-scale">
-                    <div class="feature-icon gradient-bg">
+                <div class="bg-gray-800 p-8 rounded-xl hover-scale">
+                    <div class="feature-icon">
                         <i class="fas fa-paint-brush"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Complete Brand Integration</h3>
-                    <p class="text-gray-400">
+                    <h3 class="text-xl font-bold mb-3 text-white">Complete Brand Integration</h3>
+                    <p class="text-gray-300">
                         Custom colors, logos, and styling to match your university's visual identity perfectly.
                     </p>
                 </div>
                 
-                <div class="bg-gray-800/50 p-8 rounded-xl hover-scale">
-                    <div class="feature-icon gradient-bg">
+                <div class="bg-gray-800 p-8 rounded-xl hover-scale">
+                    <div class="feature-icon">
                         <i class="fas fa-server"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">On-Premises Data Control</h3>
-                    <p class="text-gray-400">
+                    <h3 class="text-xl font-bold mb-3 text-white">On-Premises Data Control</h3>
+                    <p class="text-gray-300">
                         All data remains within your university systems for complete privacy compliance.
                     </p>
                 </div>
                 
-                <div class="bg-gray-800/50 p-8 rounded-xl hover-scale">
-                    <div class="feature-icon gradient-bg">
+                <div class="bg-gray-800 p-8 rounded-xl hover-scale">
+                    <div class="feature-icon">
                         <i class="fas fa-sync-alt"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Automatic Updates</h3>
-                    <p class="text-gray-400">
+                    <h3 class="text-xl font-bold mb-3 text-white">Automatic Updates</h3>
+                    <p class="text-gray-300">
                         Benefit from continuous improvements without additional development costs.
                     </p>
                 </div>
@@ -415,7 +426,7 @@
     </section>
 
     <!-- University Benefits Section -->
-    <section class="py-20 bg-gray-800/50">
+    <section class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">
@@ -425,21 +436,21 @@
             
             <div class="grid md:grid-cols-2 gap-8 mb-12">
                 <div class="solution-card p-8 rounded-xl">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-sign-in-alt text-emerald-500 mr-3"></i>
+                    <h3 class="text-xl font-bold mb-4 flex items-center text-white">
+                        <i class="fas fa-sign-in-alt text-blue-400 mr-3"></i>
                         Easy Student Sign-In
                     </h3>
-                    <p class="text-gray-400">
+                    <p class="text-gray-300">
                         Students authenticate seamlessly using their university email credentials through LDAP/Shibboleth/SAML integration. Automatic role assignment ensures appropriate access levels for students, faculty, and staff.
                     </p>
                 </div>
                 
                 <div class="solution-card p-8 rounded-xl">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-tachometer-alt text-emerald-500 mr-3"></i>
+                    <h3 class="text-xl font-bold mb-4 flex items-center text-white">
+                        <i class="fas fa-tachometer-alt text-blue-400 mr-3"></i>
                         Comprehensive Admin Dashboard
                     </h3>
-                    <p class="text-gray-400">
+                    <p class="text-gray-300">
                         University administrators gain powerful tools to monitor engagement, manage content, and analyze student participation across all events and communications.
                     </p>
                 </div>
@@ -449,26 +460,26 @@
             <div class="guest-mode-feature p-8 rounded-xl mb-12">
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
-                        <div class="bg-indigo-500/20 w-24 h-24 rounded-full flex items-center justify-center">
-                            <i class="fas fa-user-friends text-indigo-400 text-3xl"></i>
+                        <div class="bg-blue-500/20 w-24 h-24 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user-friends text-blue-400 text-3xl"></i>
                         </div>
                     </div>
                     <div class="md:w-2/3">
-                        <h3 class="text-2xl font-bold mb-4">Guest Mode: Showcase Your Campus</h3>
-                        <p class="text-gray-400 mb-4">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Guest Mode: Showcase Your Campus</h3>
+                        <p class="text-gray-300 mb-4">
                             Prospective students can explore campus life before enrolling through our special guest mode. This powerful recruitment tool allows future students to:
                         </p>
                         <ul class="text-gray-300 space-y-2">
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-400 mt-1 mr-2"></i>
+                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
                                 <span>Browse upcoming events and activities</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-400 mt-1 mr-2"></i>
+                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
                                 <span>Ask current students questions about campus life</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-400 mt-1 mr-2"></i>
+                                <i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
                                 <span>Get a genuine feel for your university's community</span>
                             </li>
                         </ul>
@@ -480,26 +491,26 @@
             <div class="automated-posting p-8 rounded-xl">
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
-                        <div class="bg-pink-500/20 w-24 h-24 rounded-full flex items-center justify-center">
-                            <i class="fas fa-robot text-pink-400 text-3xl"></i>
+                        <div class="bg-purple-500/20 w-24 h-24 rounded-full flex items-center justify-center">
+                            <i class="fas fa-robot text-purple-400 text-3xl"></i>
                         </div>
                     </div>
                     <div class="md:w-2/3">
-                        <h3 class="text-2xl font-bold mb-4">Automated Cross-Posting</h3>
-                        <p class="text-gray-400 mb-4">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Automated Cross-Posting</h3>
+                        <p class="text-gray-300 mb-4">
                             Save time and maximize reach with our innovative automated posting feature:
                         </p>
                         <ul class="text-gray-300 space-y-2">
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-pink-400 mt-1 mr-2"></i>
+                                <i class="fas fa-check-circle text-purple-400 mt-1 mr-2"></i>
                                 <span>Post once in Locali, distribute to Instagram, Facebook, LinkedIn</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-pink-400 mt-1 mr-2"></i>
+                                <i class="fas fa-check-circle text-purple-400 mt-1 mr-2"></i>
                                 <span>Maintain consistent messaging across all platforms</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-pink-400 mt-1 mr-2"></i>
+                                <i class="fas fa-check-circle text-purple-400 mt-1 mr-2"></i>
                                 <span>Optional approval workflow for university communications</span>
                             </li>
                         </ul>
@@ -510,159 +521,168 @@
     </section>
 
     <!-- Hyperlocal Features Section -->
-    <section id="features" class="py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                    <span class="gradient-text">Your Complete Digital Campus</span>
-                </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
-                    Everything students need, all in one place
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-800/50 p-8 rounded-xl hover-scale">
-                    <div class="feature-icon gradient-bg">
+<section id="features" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                <span class="gradient-text">Your Complete Digital Campus</span>
+            </h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Everything students need, all in one place
+            </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+            <!-- Left Side: Features (First Half) -->
+            <div class="lg:w-1/3 flex flex-col gap-6">
+                <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+                    <div class="feature-icon">
                         <i class="fas fa-calendar-plus"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Event Creation & Discovery</h3>
-                    <p class="text-gray-400">
+                    <h3 class="text-xl font-bold mb-3 text-white">Event Creation & Discovery</h3>
+                    <p class="text-gray-300">
                         From planned lectures to spontaneous meetups, students can easily find and create activities.
                     </p>
                 </div>
-                
-                <div class="bg-gray-800/50 p-8 rounded-xl hover-scale">
-                    <div class="feature-icon gradient-bg">
+                <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+                    <div class="feature-icon">
                         <i class="fas fa-city"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">City Integration</h3>
-                    <p class="text-gray-400">
+                    <h3 class="text-xl font-bold mb-3 text-white">City Integration</h3>
+                    <p class="text-gray-300">
                         Connect campus life with the surrounding community through local events and partnerships.
                     </p>
                 </div>
-                
-                <div class="bg-gray-800/50 p-8 rounded-xl hover-scale">
-                    <div class="feature-icon gradient-bg">
+                <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+                    <div class="feature-icon">
                         <i class="fas fa-qrcode"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Attendance Tracking</h3>
-                    <p class="text-gray-400">
+                    <h3 class="text-xl font-bold mb-3 text-white">Attendance Tracking</h3>
+                    <p class="text-gray-300">
                         QR code check-ins and digital registration for accurate event participation data.
                     </p>
                 </div>
-                
-                <div class="bg-gray-800/50 p-8 rounded-xl hover-scale">
-                    <div class="feature-icon gradient-bg">
+            </div>
+
+            <!-- Center: App Screenshot -->
+            <div class="lg:w-1/3 flex justify-center">
+                <div class="device-mockup mobile">
+                    <img src="assets/images/mobile-screenshot.png" alt="Locali App Screenshot" class="rounded-lg">
+                </div>
+            </div>
+
+            <!-- Right Side: Features (Second Half) -->
+            <div class="lg:w-1/3 flex flex-col gap-6">
+                <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+                    <div class="feature-icon">
                         <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Interactive Maps</h3>
-                    <p class="text-gray-400">
+                    <h3 class="text-xl font-bold mb-3 text-white">Interactive Maps</h3>
+                    <p class="text-gray-300">
                         Visualize events and resources across campus with real-time location data.
                     </p>
                 </div>
-                
-                <div class="bg-gray-800/50 p-8 rounded-xl hover-scale">
-                    <div class="feature-icon gradient-bg">
+                <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+                    <div class="feature-icon">
                         <i class="fas fa-comment-dots"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Community Thoughts</h3>
-                    <p class="text-gray-400">
+                    <h3 class="text-xl font-bold mb-3 text-white">Community Thoughts</h3>
+                    <p class="text-gray-300">
                         Q&A platform where students can ask questions and get answers from peers.
                     </p>
                 </div>
-                
-                <div class="bg-gray-800/50 p-8 rounded-xl hover-scale">
-                    <div class="feature-icon gradient-bg">
+                <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+                    <div class="feature-icon">
                         <i class="fas fa-utensils"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Cafeteria Menus</h3>
-                    <p class="text-gray-400">
+                    <h3 class="text-xl font-bold mb-3 text-white">Cafeteria Menus</h3>
+                    <p class="text-gray-300">
                         Real-time dining information with dietary filters and specials.
                     </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Solutions Section -->
-    <section id="solutions" class="py-20 bg-gray-800/50">
+    <section id="solutions" class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">
                     <span class="gradient-text">Solutions for Every Campus Need</span>
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Locali addresses the critical challenges facing modern universities
                 </p>
             </div>
             
             <div class="grid md:grid-cols-2 gap-8 mb-16">
-                <div class="bg-gray-900 p-8 rounded-xl">
+                <div class="bg-gray-800 p-8 rounded-xl">
                     <h3 class="text-2xl font-bold mb-4 gradient-text">For Students</h3>
                     <ul class="space-y-4 text-gray-300">
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Overcome isolation and build meaningful connections</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Centralized access to all campus activities and resources</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Cultural exchange opportunities with international peers</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Easy academic resource sharing and study group formation</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-gray-900 p-8 rounded-xl">
+                <div class="bg-gray-800 p-8 rounded-xl">
                     <h3 class="text-2xl font-bold mb-4 gradient-text">For Universities</h3>
                     <ul class="space-y-4 text-gray-300">
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Comprehensive analytics on student engagement</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>White-label solution that matches university branding</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Integration with existing systems (LMS, cafeteria, etc.)</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Crisis communication channel for emergencies</span>
                         </li>
                     </ul>
                 </div>
             </div>
             
-            <div class="bg-gray-900 p-8 rounded-xl">
+            <div class="bg-gray-800 p-8 rounded-xl">
                 <h3 class="text-2xl font-bold mb-4 gradient-text">For City & Business Partners</h3>
                 <div class="grid md:grid-cols-2 gap-8">
                     <ul class="space-y-4 text-gray-300">
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Controlled access portal to reach student populations</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Student discount program management</span>
                         </li>
                     </ul>
                     <ul class="space-y-4 text-gray-300">
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Internship & job opportunity board</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-check-circle text-emerald-500 mt-1 mr-3"></i>
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
                             <span>Civic engagement and volunteering opportunities</span>
                         </li>
                     </ul>
@@ -678,33 +698,30 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">
                     <span class="gradient-text">Locali in Action</span>
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     See how Locali transforms campus life through these screenshots
                 </p>
             </div>
             
             <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
                 <div class="media-container p-6">
-                    <h3 class="text-xl font-bold mb-4">Web View</h3>
+                    <h3 class="text-xl font-bold mb-4 text-white">Web View</h3>
                     <div class="device-mockup web">
-                        <!-- Replace with your actual web screenshot -->
-                        <img src= "assets/images/web-screenshot.png" alt="Locali web interface" class="rounded">
+                        <img src="assets/images/web-screenshot.png" alt="Locali web interface" class="rounded">
                     </div>
                 </div>
                 
                 <div class="media-container p-6">
-                    <h3 class="text-xl font-bold mb-4">Mobile App</h3>
+                    <h3 class="text-xl font-bold mb-4 text-white">Mobile App</h3>
                     <div class="device-mockup mobile">
-                        <!-- Replace with your actual mobile screenshot -->
                         <img src="assets/images/mobile-screenshot.png" alt="Locali mobile app" class="rounded-lg">
                     </div>
                 </div>
             </div>
             
             <div class="media-container p-8">
-                <h3 class="text-2xl font-bold mb-6 text-center">Screenshot Gallery</h3>
+                <h3 class="text-2xl font-bold mb-6 text-center text-white">Screenshot Gallery</h3>
                 <div class="screenshot-gallery">
-                    <!-- Replace these with your actual screenshots -->
                     <div class="screenshot-thumbnail">
                         <img src="https://via.placeholder.com/300x600/1e293b/64748b?text=Event+Discovery" alt="Event discovery screen" class="w-full h-auto">
                     </div>
@@ -726,57 +743,54 @@
     </section>
 
     <!-- Storyboard Section -->
-    <section class="py-20 bg-gray-800/50">
+    <section class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">
                     <span class="gradient-text">User Storyboards</span>
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Visualizing how students interact with Locali in real campus scenarios
                 </p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                 <div class="storyboard-card p-6">
-                    <div class="text-4xl font-bold text-indigo-400 mb-4">1</div>
-                    <h3 class="text-xl font-bold mb-3">Photo Walk Announcement</h3>
+                    <div class="text-4xl font-bold text-blue-400 mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Photo Walk Announcement</h3>
                     <div class="bg-gray-800 p-4 rounded-lg mb-4">
-                        <!-- Replace with your actual storyboard image -->
                         <img src="https://via.placeholder.com/400x300/1e293b/64748b?text=Photo+Walk+Storyboard" alt="Photo walk storyboard" class="rounded">
                     </div>
-                    <p class="text-gray-400">
+                    <p class="text-gray-300">
                         Students organize spontaneous photo walks around campus landmarks, connecting through shared interests.
                     </p>
                 </div>
                 
                 <div class="storyboard-card p-6">
-                    <div class="text-4xl font-bold text-indigo-400 mb-4">2</div>
-                    <h3 class="text-xl font-bold mb-3">Event Discovery</h3>
+                    <div class="text-4xl font-bold text-blue-400 mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Event Discovery</h3>
                     <div class="bg-gray-800 p-4 rounded-lg mb-4">
-                        <!-- Replace with your actual storyboard image -->
                         <img src="https://via.placeholder.com/400x300/1e293b/64748b?text=Event+Discovery+Storyboard" alt="Event discovery storyboard" class="rounded">
                     </div>
-                    <p class="text-gray-400">
+                    <p class="text-gray-300">
                         Students browse upcoming events filtered by their interests and academic schedule.
                     </p>
                 </div>
                 
                 <div class="storyboard-card p-6">
-                    <div class="text-4xl font-bold text-indigo-400 mb-4">3</div>
-                    <h3 class="text-xl font-bold mb-3">Study Group Formation</h3>
+                    <div class="text-4xl font-bold text-blue-400 mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Study Group Formation</h3>
                     <div class="bg-gray-800 p-4 rounded-lg mb-4">
-                        <!-- Replace with your actual storyboard image -->
                         <img src="https://via.placeholder.com/400x300/1e293b/64748b?text=Study+Group+Storyboard" alt="Study group storyboard" class="rounded">
                     </div>
-                    <p class="text-gray-400">
+                    <p class="text-gray-300">
                         Students create and join study groups for specific courses with shared materials and meeting times.
                     </p>
                 </div>
             </div>
             
             <div class="text-center">
-                <a href="#all-storyboards" class="inline-flex items-center text-indigo-400 hover:text-indigo-300">
+                <a href="#all-storyboards" class="inline-flex items-center text-blue-400 hover:text-blue-300">
                     View all storyboards
                     <i class="fas fa-chevron-right ml-2"></i>
                 </a>
@@ -791,14 +805,13 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">
                     <span class="gradient-text">See Locali in Motion</span>
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Watch our prototype walkthrough to experience the platform
                 </p>
             </div>
             
             <div class="media-container p-2 md:p-4">
                 <div class="video-container">
-                    <!-- Replace with your local video file -->
                     <video controls class="w-full">
                         <source src="assets/videos/locali-demo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -808,25 +821,25 @@
             
             <div class="grid md:grid-cols-3 gap-8 mt-12">
                 <div class="media-container p-6 text-center">
-                    <i class="fas fa-mobile-alt text-4xl text-indigo-400 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Mobile Experience</h3>
-                    <p class="text-gray-400">
+                    <i class="fas fa-mobile-alt text-4xl text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2 text-white">Mobile Experience</h3>
+                    <p class="text-gray-300">
                         See how Locali works on smartphones with intuitive touch interactions.
                     </p>
                 </div>
                 
                 <div class="media-container p-6 text-center">
-                    <i class="fas fa-laptop text-4xl text-indigo-400 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Web Dashboard</h3>
-                    <p class="text-gray-400">
+                    <i class="fas fa-laptop text-4xl text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2 text-white">Web Dashboard</h3>
+                    <p class="text-gray-300">
                         Explore the comprehensive web interface for administrators.
                     </p>
                 </div>
                 
                 <div class="media-container p-6 text-center">
-                    <i class="fas fa-users text-4xl text-indigo-400 mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Social Features</h3>
-                    <p class="text-gray-400">
+                    <i class="fas fa-users text-4xl text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2 text-white">Social Features</h3>
+                    <p class="text-gray-300">
                         Discover how students connect through the platform.
                     </p>
                 </div>
@@ -839,33 +852,33 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-6 text-center">
                 <div class="stats-card p-8 rounded-xl">
-                    <div class="text-4xl font-bold gradient-text mb-2">6,000+</div>
-                    <p class="text-gray-400">Students Connected</p>
+                    <div class="text-4xl font-bold text-blue-400 mb-2">6,000+</div>
+                    <p class="text-gray-300">Students Connected</p>
                 </div>
                 <div class="stats-card p-8 rounded-xl">
-                    <div class="text-4xl font-bold gradient-text mb-2">77</div>
-                    <p class="text-gray-400">Countries Represented</p>
+                    <div class="text-4xl font-bold text-blue-400 mb-2">77</div>
+                    <p class="text-gray-300">Countries Represented</p>
                 </div>
                 <div class="stats-card p-8 rounded-xl">
-                    <div class="text-4xl font-bold gradient-text mb-2">89%</div>
-                    <p class="text-gray-400">Increase in Student Events</p>
+                    <div class="text-4xl font-bold text-blue-400 mb-2">89%</div>
+                    <p class="text-gray-300">Increase in Student Events</p>
                 </div>
                 <div class="stats-card p-8 rounded-xl">
-                    <div class="text-4xl font-bold gradient-text mb-2">64%</div>
-                    <p class="text-gray-400">Improved Belonging (Int'l Students)</p>
+                    <div class="text-4xl font-bold text-blue-400 mb-2">64%</div>
+                    <p class="text-gray-300">Improved Belonging (Int'l Students)</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-gray-800/50">
+    <section id="testimonials" class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">
                     <span class="gradient-text">What Our Partners Say</span>
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Universities and students share their experiences with Locali
                 </p>
             </div>
@@ -875,9 +888,9 @@
                     <div class="flex items-center mb-6">
                         <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Caroline Bluhm" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Caroline Bluhm</h4>
-                            <p class="text-gray-400 text-sm">Team Leader Projects & Applications IT</p>
-                            <p class="text-gray-400 text-sm">HM München University</p>
+                            <h4 class="font-bold text-white">Caroline Bluhm</h4>
+                            <p class="text-gray-300 text-sm">Team Leader Projects & Applications IT</p>
+                            <p class="text-gray-300 text-sm">HM München University</p>
                         </div>
                     </div>
                     <p class="text-gray-300 italic mb-4">
@@ -896,9 +909,9 @@
                     <div class="flex items-center mb-6">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Prof. Dr. Alexander Goesmann" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold">Prof. Dr. Alexander Goesmann</h4>
-                            <p class="text-gray-400 text-sm">Vice President for Academic Infrastructure</p>
-                            <p class="text-gray-400 text-sm">Justus Liebig University Giessen</p>
+                            <h4 class="font-bold text-white">Prof. Dr. Alexander Goesmann</h4>
+                            <p class="text-gray-300 text-sm">Vice President for Academic Infrastructure</p>
+                            <p class="text-gray-300 text-sm">Justus Liebig University Giessen</p>
                         </div>
                     </div>
                     <p class="text-gray-300 italic mb-4">
@@ -915,7 +928,7 @@
             </div>
             
             <div class="mt-12 text-center">
-                <a href="#case-studies" class="inline-flex items-center text-indigo-400 hover:text-indigo-300">
+                <a href="#case-studies" class="inline-flex items-center text-blue-400 hover:text-blue-300">
                     View all case studies
                     <i class="fas fa-chevron-right ml-2"></i>
                 </a>
@@ -930,34 +943,34 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">
                     <span class="gradient-text">Simple Implementation</span>
                 </h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Get your customized Locali platform up and running quickly
                 </p>
             </div>
             
             <div class="grid md:grid-cols-4 gap-6">
-                <div class="bg-gray-800/50 p-6 rounded-xl text-center">
+                <div class="bg-gray-800 p-6 rounded-xl text-center">
                     <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
-                    <h3 class="text-xl font-bold mb-2">Discovery Phase</h3>
-                    <p class="text-gray-400">2-3 weeks for needs assessment and technical evaluation</p>
+                    <h3 class="text-xl font-bold mb-2 text-white">Discovery Phase</h3>
+                    <p class="text-gray-300">2-3 weeks for needs assessment and technical evaluation</p>
                 </div>
                 
-                <div class="bg-gray-800/50 p-6 rounded-xl text-center">
+                <div class="bg-gray-800 p-6 rounded-xl text-center">
                     <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
-                    <h3 class="text-xl font-bold mb-2">Setup & Configuration</h3>
-                    <p class="text-gray-400">3-4 weeks for branding and system integration</p>
+                    <h3 class="text-xl font-bold mb-2 text-white">Setup & Configuration</h3>
+                    <p class="text-gray-300">3-4 weeks for branding and system integration</p>
                 </div>
                 
-                <div class="bg-gray-800/50 p-6 rounded-xl text-center">
+                <div class="bg-gray-800 p-6 rounded-xl text-center">
                     <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
-                    <h3 class="text-xl font-bold mb-2">Pilot Launch</h3>
-                    <p class="text-gray-400">4-6 weeks with select student groups</p>
+                    <h3 class="text-xl font-bold mb-2 text-white">Pilot Launch</h3>
+                    <p class="text-gray-300">4-6 weeks with select student groups</p>
                 </div>
                 
-                <div class="bg-gray-800/50 p-6 rounded-xl text-center">
+                <div class="bg-gray-800 p-6 rounded-xl text-center">
                     <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
-                    <h3 class="text-xl font-bold mb-2">Full Deployment</h3>
-                    <p class="text-gray-400">Campus-wide rollout in 2-3 months</p>
+                    <h3 class="text-xl font-bold mb-2 text-white">Full Deployment</h3>
+                    <p class="text-gray-300">Campus-wide rollout in 2-3 months</p>
                 </div>
             </div>
         </div>
@@ -967,13 +980,13 @@
     <section id="demo" class="py-20 gradient-bg">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
                     Ready to Transform Your Campus Community?
                 </h2>
                 <p class="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
                     Schedule a demo to see how Locali can work for your university
                 </p>
-                <a href="#contact" class="bg-white text-gray-900 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition inline-block">
+                <a href="#contact" class="bg-white text-blue-500 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition inline-block">
                     Request Demo
                 </a>
             </div>
@@ -986,69 +999,69 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Get In Touch</h2>
-                    <p class="text-gray-400 mb-8">
+                    <p class="text-gray-300 mb-8">
                         Have questions about implementing Locali at your institution? Our team is ready to help you create a customized solution for your campus community.
                     </p>
                     
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <i class="fas fa-envelope text-indigo-400 mt-1 mr-4"></i>
+                            <i class="fas fa-envelope text-blue-400 mt-1 mr-4"></i>
                             <div>
-                                <h4 class="font-bold">Email</h4>
-                                <p class="text-gray-400">contact@locali.app</p>
+                                <h4 class="font-bold text-white">Email</h4>
+                                <p class="text-gray-300">contact@locali.app</p>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <i class="fas fa-phone-alt text-indigo-400 mt-1 mr-4"></i>
+                            <i class="fas fa-phone-alt text-blue-400 mt-1 mr-4"></i>
                             <div>
-                                <h4 class="font-bold">Phone</h4>
-                                <p class="text-gray-400">+49 123 456 7890</p>
+                                <h4 class="font-bold text-white">Phone</h4>
+                                <p class="text-gray-300">+49 123 456 7890</p>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-indigo-400 mt-1 mr-4"></i>
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-4"></i>
                             <div>
-                                <h4 class="font-bold">Office</h4>
-                                <p class="text-gray-400">Campusallee 12, 32657 Lemgo, Germany</p>
+                                <h4 class="font-bold text-white">Office</h4>
+                                <p class="text-gray-300">Campusallee 12, 32657 Lemgo, Germany</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-gray-800/50 p-8 rounded-xl">
+                <div class="bg-gray-800 p-8 rounded-xl">
                     <form>
                         <div class="mb-6">
                             <label for="university" class="block text-gray-300 mb-2">Name of your University</label>
-                            <input type="text" id="university" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <input type="text" id="university" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
                         </div>
                         
                         <div class="grid md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="email" class="block text-gray-300 mb-2">Email</label>
-                                <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <input type="email" id="email" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
                             </div>
                             
                             <div>
                                 <label for="phone" class="block text-gray-300 mb-2">Phone Number</label>
-                                <input type="tel" id="phone" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <input type="tel" id="phone" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
                             </div>
                         </div>
                         
                         <div class="mb-6">
                             <label for="message" class="block text-gray-300 mb-2">Message</label>
-                            <textarea id="message" rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                            <textarea id="message" rows="4" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"></textarea>
                         </div>
                         
                         <div class="mb-6">
                             <label class="flex items-start">
-                                <input type="checkbox" class="mt-1 mr-2">
-                                <span class="text-gray-400">I agree to the privacy policy</span>
+                                <input type="checkbox" class="mt-1 mr-2 text-blue-500">
+                                <span class="text-gray-300">I agree to the privacy policy</span>
                             </label>
                         </div>
                         
-                        <button type="submit" class="gradient-bg text-white w-full py-3 rounded-lg font-medium hover:opacity-90 transition">
+                        <button type="submit" class="bg-blue-500 text-white w-full py-3 rounded-lg font-medium hover:bg-blue-600 transition">
                             Submit
                         </button>
                     </form>
@@ -1058,68 +1071,68 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 bg-gray-800">
+    <footer class="py-12 bg-gray-900 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8 mb-12">
                 <div>
-                    <h3 class="text-xl font-bold gradient-text mb-4">Locali</h3>
-                    <p class="text-gray-400 mb-4">
+                    <h3 class="text-xl font-bold text-blue-400 mb-4">Locali</h3>
+                    <p class="text-gray-300 mb-4">
                         The comprehensive digital campus platform connecting students, faculty and community.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
                 
                 <div>
-                    <h4 class="font-bold text-gray-300 mb-4">Information</h4>
+                    <h4 class="font-bold text-white mb-4">Information</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">App Terms of Use</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Imprint</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Accessibility</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">App Terms of Use</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">Privacy policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">Imprint</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">Accessibility</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">FAQ</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="font-bold text-gray-300 mb-4">Service</h4>
+                    <h4 class="font-bold text-white mb-4">Service</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">News</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Job portal</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Become a team member</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Press</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">News</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">Job portal</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">Become a team member</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">Press</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="font-bold text-gray-300 mb-4">Login</h4>
+                    <h4 class="font-bold text-white mb-4">Login</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cooperation portal</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Locali Account</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">News Feed</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">Cooperation portal</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">Locali Account</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-blue-400 transition">News Feed</a></li>
                     </ul>
                 </div>
             </div>
             
-            <div class="pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 mb-4 md:mb-0">
                     © 2025 Locali. All rights reserved.
                 </p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition">en</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">de</a>
+                    <a href="#" class="text-gray-300 hover:text-blue-400 transition">en</a>
+                    <a href="#" class="text-gray-300 hover:text-blue-400 transition">de</a>
                 </div>
             </div>
         </div>
@@ -1130,14 +1143,14 @@
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0 md:mr-8">
-                    <h4 class="font-bold mb-2">WOULD YOU LIKE SOME COOKIES?</h4>
-                    <p class="text-gray-400 text-sm">
+                    <h4 class="font-bold text-white mb-2">WOULD YOU LIKE SOME COOKIES?</h4>
+                    <p class="text-gray-300 text-sm">
                         We use a single cookie to collect anonymized data about the usage of our page. This helps us improve your experience in the future. Do you agree to this?
                     </p>
                 </div>
                 <div class="flex space-x-4">
-                    <button onclick="acceptCookies()" class="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition">Accept</button>
-                    <button onclick="declineCookies()" class="bg-transparent border border-white/30 px-6 py-2 rounded-full text-sm font-medium hover:bg-white/10 transition">Deny</button>
+                    <button onclick="acceptCookies()" class="bg-blue-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-600 transition">Accept</button>
+                    <button onclick="declineCookies()" class="bg-transparent border border-gray-300 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition text-white">Deny</button>
                 </div>
             </div>
         </div>
@@ -1145,17 +1158,15 @@
 
     <!-- Lightbox for screenshots -->
     <div id="lightbox" class="lightbox">
-        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <span class="lightbox-close" onclick="closeLightbox()">×</span>
         <img id="lightbox-content" class="lightbox-content" src="" alt="">
     </div>
 
     <script>
-        // Mobile menu toggle functionality would go here
         function toggleMobileMenu() {
             // Implementation for mobile menu
         }
         
-        // Cookie banner functionality
         function acceptCookies() {
             document.getElementById('cookieBanner').style.display = 'none';
             localStorage.setItem('cookiePreference', 'accepted');
@@ -1166,12 +1177,10 @@
             localStorage.setItem('cookiePreference', 'declined');
         }
         
-        // Check if cookie preference is already set
         if (localStorage.getItem('cookiePreference')) {
             document.getElementById('cookieBanner').style.display = 'none';
         }
         
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1181,7 +1190,6 @@
             });
         });
         
-        // Lightbox functionality for screenshots
         const thumbnails = document.querySelectorAll('.screenshot-thumbnail img');
         const lightbox = document.getElementById('lightbox');
         const lightboxContent = document.getElementById('lightbox-content');
@@ -1197,14 +1205,12 @@
             lightbox.style.display = 'none';
         }
         
-        // Close lightbox when clicking outside the image
         lightbox.addEventListener('click', function(e) {
             if (e.target === lightbox) {
                 closeLightbox();
             }
         });
         
-        // Close lightbox with ESC key
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeLightbox();
