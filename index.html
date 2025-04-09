@@ -991,81 +991,81 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Get In Touch</h2>
-                    <p class="text-gray-300 mb-8">
-                        Have questions about implementing Locali at your institution? Our team is ready to help you create a customized solution for your campus community.
-                    </p>
+<section id="contact" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Get In Touch</h2>
+                <p class="text-gray-300 mb-8">
+                    Have questions about implementing Locali at your institution? Our team is ready to help you create a customized solution for your campus community.
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <i class="fas fa-envelope text-blue-400 mt-1 mr-4"></i>
+                        <div>
+                            <h4 class="font-bold text-white">Email</h4>
+                            <p class="text-gray-300">contact@locali.app</p>
+                        </div>
+                    </div>
                     
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-envelope text-blue-400 mt-1 mr-4"></i>
-                            <div>
-                                <h4 class="font-bold text-white">Email</h4>
-                                <p class="text-gray-300">contact@locali.app</p>
-                            </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-phone-alt text-blue-400 mt-1 mr-4"></i>
+                        <div>
+                            <h4 class="font-bold text-white">Phone</h4>
+                            <p class="text-gray-300">+49 123 456 7890</p>
                         </div>
-                        
-                        <div class="flex items-start">
-                            <i class="fas fa-phone-alt text-blue-400 mt-1 mr-4"></i>
-                            <div>
-                                <h4 class="font-bold text-white">Phone</h4>
-                                <p class="text-gray-300">+49 123 456 7890</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-4"></i>
-                            <div>
-                                <h4 class="font-bold text-white">Office</h4>
-                                <p class="text-gray-300">Campusallee 12, 32657 Lemgo, Germany</p>
-                            </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-4"></i>
+                        <div>
+                            <h4 class="font-bold text-white">Office</h4>
+                            <p class="text-gray-300">Campusallee 12, 32657 Lemgo, Germany</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="bg-gray-800 p-8 rounded-xl">
-                    <form>
-                        <div class="mb-6">
-                            <label for="university" class="block text-gray-300 mb-2">Name of your University</label>
-                            <input type="text" id="university" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+            </div>
+            
+            <div class="bg-gray-800 p-8 rounded-xl">
+                <form action="https://formspree.io/f/mldjadrl" method="POST">
+                    <div class="mb-6">
+                        <label for="university" class="block text-gray-300 mb-2">Name of your University</label>
+                        <input type="text" id="university" name="university" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
                         </div>
                         
-                        <div class="grid md:grid-cols-2 gap-6 mb-6">
-                            <div>
-                                <label for="email" class="block text-gray-300 mb-2">Email</label>
-                                <input type="email" id="email" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
-                            </div>
-                            
-                            <div>
-                                <label for="phone" class="block text-gray-300 mb-2">Phone Number</label>
-                                <input type="tel" id="phone" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
-                            </div>
+                        <div>
+                            <label for="phone" class="block text-gray-300 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
                         </div>
-                        
-                        <div class="mb-6">
-                            <label for="message" class="block text-gray-300 mb-2">Message</label>
-                            <textarea id="message" rows="4" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"></textarea>
-                        </div>
-                        
-                        <div class="mb-6">
-                            <label class="flex items-start">
-                                <input type="checkbox" class="mt-1 mr-2 text-blue-500">
-                                <span class="text-gray-300">I agree to the privacy policy</span>
-                            </label>
-                        </div>
-                        
-                        <button type="submit" class="bg-blue-500 text-white w-full py-3 rounded-lg font-medium hover:bg-blue-600 transition">
-                            Submit
-                        </button>
-                    </form>
-                </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-300 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required></textarea>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="flex items-start">
+                            <input type="checkbox" name="privacy" class="mt-1 mr-2 text-blue-500" required>
+                            <span class="text-gray-300">I agree to the privacy policy</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="bg-blue-500 text-white w-full py-3 rounded-lg font-medium hover:bg-blue-600 transition">
+                        Submit
+                    </button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="py-12 bg-gray-900 border-t border-gray-800">
