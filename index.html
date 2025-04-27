@@ -28,7 +28,22 @@
         }
         
         .hero-bg {
-            background: rgba(17, 24, 39, 0.9);
+            background: rgba(17, 24, 39, 0.98);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.2), transparent 60%),
+                        radial-gradient(circle at bottom left, rgba(139, 92, 246, 0.2), transparent 60%);
+            opacity: 0.6;
+            z-index: -1;
         }
         
         .feature-icon {
@@ -137,13 +152,23 @@
         }
         
         .device-mockup.mobile {
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 24px;
-            padding: 12px;
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 
+                0 0 0 1px rgba(255, 255, 255, 0.1),
+                0 10px 30px -10px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(59, 130, 246, 0.3);
             background: #111827;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            max-width: 300px;
+            padding: 0.5rem;
+            width: 100%;
+            max-width: 280px;
             margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            .device-mockup.mobile {
+                max-width: 320px;
+            }
         }
         
         .storyboard-card {
@@ -245,6 +270,37 @@
                 color: #3B82F6;
             }
         }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Ensure minimum height works on all devices */
+        @media (max-height: 700px) {
+            .hero-bg {
+                padding-top: 5rem;
+                padding-bottom: 3rem;
+            }
+        }
+        
+        /* Improve scroll indicator visibility */
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white font-sans antialiased">
@@ -285,31 +341,40 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-bg h-screen flex items-center justify-center text-center px-4 sm:px-6 pt-20">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-1/2 mt-8 md:mt-0">
-                <img src="assets/images/mobile-screenshot_left.png" alt="Locali App Screenshot" class="max-w-xs sm:max-w-sm md:max-w-full h-auto mx-auto">
-            </div>
-            <div class="md:w-1/2 text-left fade-in">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                    Your Digital Campus,<br>Connected Like Never Before
-                </h1>
-                <p class="text-lg sm:text-xl text-gray-300 mb-8">
-                    Locali brings students, faculty, and communities together in one vibrant platform.<br>
-                    Proven at TH OWL with 6,000+ students from 77 countries.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#demo" class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full text-lg font-medium transition">Join Now</a>
-                    <a href="#features" class="bg-transparent border border-white hover:bg-white/10 px-8 py-3 rounded-full text-lg font-medium transition">Learn More</a>
+    <section class="hero-bg min-h-screen flex items-center justify-center text-center px-4 sm:px-6 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+                <!-- Text Content -->
+                <div class="md:w-1/2 text-left fade-in">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Your Digital Campus,<br>Connected Like Never Before
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 mb-8">
+                        Locali brings students, faculty, and communities together in one vibrant platform.<br class="hidden sm:block">
+                        Proven at TH OWL with 6,000+ students from 77 countries.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#demo" class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full text-lg font-medium transition text-center">Join Now</a>
+                        <a href="#features" class="bg-transparent border border-white hover:bg-white/10 px-8 py-3 rounded-full text-lg font-medium transition text-center">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile App Screenshot -->
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="device-mockup mobile relative">
+                        <img src="assets/images/mobile-screenshot_left.png" alt="Locali App Screenshot" class="max-w-xs w-full h-auto mx-auto rounded-2xl">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="absolute bottom-10">
-            <a href="#features" class="scroll-btn text-gray-300">
-                <svg class="h-8 w-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-            </a>
+            
+            <!-- Scroll Indicator -->
+            <div class="mt-12 md:mt-16">
+                <a href="#features" class="scroll-btn text-gray-300 inline-block animate-bounce">
+                    <svg class="h-8 w-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
   
