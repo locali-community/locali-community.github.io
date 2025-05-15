@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locali - Digital Campus Community Platform | Transform University Life</title>
-    <meta name="description" content="Locali connects students, faculty and the community through a unified digital campus platform. Enhance engagement, communication and campus life with our white-label solution.">
-    <meta name="keywords" content="campus app, university platform, student engagement, digital campus, white label app, higher education technology">
-    <meta property="og:title" content="Locali - Digital Campus Community Platform">
-    <meta property="og:description" content="Transform university life with Locali's comprehensive digital campus solution.">
+    <title>Locali - Create Hyper-Local Events | Transform Campus & City Life</title>
+    <meta name="description" content="Locali empowers students to create hyper-local events, connecting campus and city life in one vibrant platform. Revive your university experience and bridge the town-gown divide.">
+    <meta name="keywords" content="campus app, student events, hyper-local activities, university platform, student engagement, digital campus, city integration">
+    <meta property="og:title" content="Locali - Create Hyper-Local Events for Campus & City">
+    <meta property="og:description" content="Transform university life with Locali: create student-led events, connect with peers, and unite campus with city activities.">
     <meta property="og:image" content="https://locali.app/social-preview.jpg">
     <meta property="og:url" content="https://locali.app">
     <meta name="twitter:card" content="summary_large_image">
@@ -202,6 +202,17 @@
             cursor: pointer;
         }
 
+        .trust-card {
+            background: rgba(31, 42, 68, 0.5);
+            border-left: 4px solid #3B82F6;
+        }
+
+        .demo-widget {
+            background: rgba(31, 42, 68, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+        }
+
         /* Mobile-specific styles */
         .mobile-menu {
             display: none;
@@ -240,7 +251,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
-        /* Mobile app screenshot */
         .phone-mockup {
             max-width: 100%;
             height: auto;
@@ -315,31 +325,30 @@
     </nav>
 
     <!-- Hero Section -->
-<section class="hero-bg min-h-screen flex items-center pt-24 pb-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-            <!-- Mobile App Screenshot - Left side -->
-            <div class="md:w-1/2 flex justify-center md:justify-end">
-                <img src="assets/images/mobile-screenshot_left.png" alt="Locali App Screenshot" class="phone-mockup max-w-sm md:max-w-md lg:max-w-lg">
-            </div>
-            
-            <!-- Text Content - Right side -->
-            <div class="md:w-1/2 hero-content">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                    Your Digital Campus,<br>Connected Like Never Before
-                </h1>
-                <p class="text-lg sm:text-xl text-gray-300 mb-8">
-                    Locali brings students, faculty, and communities together in one vibrant platform.<br class="hidden sm:block">
-                    Proven at TH OWL with 6,000+ students from 77 countries.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 hero-buttons">
-                    <a href="#demo" class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full text-lg font-medium transition text-center">Join Now</a>
-                    <a href="#features" class="bg-transparent border border-white hover:bg-white/10 px-8 py-3 rounded-full text-lg font-medium transition text-center">Learn More</a>
+    <section class="hero-bg min-h-screen flex items-center pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <!-- Hero Image -->
+                <div class="md:w-1/2 flex justify-center md:justify-end">
+                    <img src="assets/images/student-event-hero.png" alt="Student creating hyper-local event" class="phoneರ:1393 phone-mockup max-w-sm md:max-w-md lg:max-w-lg">
+                </div>
+                
+                <!-- Text Content -->
+                <div class="md:w-1/2 hero-content">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Spark Your Campus Vibe<br>with Locali
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 mb-8">
+                        Create hyper-local events, connect with peers, and unite campus with city life—all in one app. Proven at TH OWL with 6,000+ students.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 hero-buttons">
+                        <a href="#signup" class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full text-lg font-medium transition text-center">Create Your First Event</a>
+                        <a href="#demo" class="bg-transparent border border-white hover:bg-white/10 px-8 py-3 rounded-full text-lg font-medium transition text-center">Request Demo</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
   
     <!-- Logo Cloud -->
     <section class="py-12 bg-gray-800">
@@ -356,15 +365,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12 sm:mb-16">
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-                    <span class="gradient-text">The Challenges Students Face</span>
+                    <span class="gradient-text">Feeling Lost on Campus?</span>
                 </h2>
                 <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                    Real struggles we've heard from students across campuses
+                    90% of students miss events or feel disconnected due to these challenges. Locali changes that.
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-12">
                 <div class="problem-card p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">Social Isolation</h3>
                     <div class="flex items-center mb-4">
                         <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
                         <div>
@@ -373,11 +383,12 @@
                         </div>
                     </div>
                     <p class="text-gray-300 italic">
-                        "After orientation week, I felt completely lost. Everyone seemed to have their groups already, and I didn't know where to find events or meet people."
+                        "After orientation, I felt alone. Everyone had their groups, and I didn’t know how to meet people."
                     </p>
                 </div>
                 
                 <div class="problem-card p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">Event Discovery Chaos</h3>
                     <div class="flex items-center mb-4">
                         <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
                         <div>
@@ -386,24 +397,26 @@
                         </div>
                     </div>
                     <p class="text-gray-300 italic">
-                        "I missed so many interesting events because I didn't know where to look. Information was scattered across flyers, emails, and social media."
+                        "I missed events because info was scattered across flyers, emails, and social media."
                     </p>
                 </div>
                 
                 <div class="problem-card p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">Campus-City Disconnect</h3>
                     <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
                         <div>
-                            <h4 class="font-bold text-white">Lena, Local Student</h4>
-                            <p class="text-gray-300 text-sm">Business Administration</p>
+                            <h4 class="font-bold text-white">Jamal, 3rd-Year Student</h4>
+                            <p class="text-gray-300 text-sm">Fine Arts</p>
                         </div>
                     </div>
                     <p class="text-gray-300 italic">
-                        "I wanted to practice my Spanish with native speakers, but had no idea how to find them on campus."
+                        "I’ve been here a year and never explored the city because I didn’t know where to start."
                     </p>
                 </div>
                 
                 <div class="problem-card p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">Event Promotion Struggles</h3>
                     <div class="flex items-center mb-4">
                         <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Student" class="w-12 h-12 rounded-full mr-4">
                         <div>
@@ -412,22 +425,22 @@
                         </div>
                     </div>
                     <p class="text-gray-300 italic">
-                        "Promoting events across different platforms was time-consuming, and we still only reached a fraction of students."
+                        "Promoting events across platforms was exhausting, and we still missed most students."
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Create & Connect Locally Section -->
+    <!-- Empower Your Campus Section -->
     <section class="py-12 sm:py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12 sm:mb-16">
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-                    <span class="gradient-text">Create & Connect Locally</span>
+                    <span class="gradient-text">Empower Your Campus: Create Hyper-Local Events</span>
                 </h2>
                 <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                    With Locali, students can spark hyperlocal activities, meet peers nearby, and build meaningful connections.
+                    With Locali, students create events in seconds—from campus study groups to city-wide festivals—building vibrant connections.
                 </p>
             </div>
 
@@ -436,9 +449,9 @@
                     <div class="feature-icon">
                         <i class="fas fa-calendar-plus"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Organize in Seconds</h3>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Create Events in Seconds</h3>
                     <p class="text-gray-300">
-                        Plan a study group, coffee chat, or campus walk with a few taps.
+                        Plan a study group, movie night, or city scavenger hunt with a few taps.
                     </p>
                 </div>
                 
@@ -446,46 +459,102 @@
                     <div class="feature-icon">
                         <i class="fas fa-user-friends"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Meet Like-Minded Peers</h3>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Connect with Peers</h3>
                     <p class="text-gray-300">
-                        Discover students with shared interests and connect in person.
+                        Meet students with shared interests at campus or city events.
                     </p>
                 </div>
                 
                 <div class="bg-gray-800 p-6 sm:p-8 rounded-xl hover-scale">
                     <div class="feature-icon">
-                        <i class="fas fa-handshake"></i>
+                        <i class="fas fa-city"></i>
                     </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Form Lasting Bonds</h3>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Unite Campus & City</h3>
                     <p class="text-gray-300">
-                        Turn casual meetups into friendships that enrich your university experience.
+                        Promote your campus event to locals or join city festivals.
                     </p>
+                </div>
+              
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-12">
+                <div class="testimonial-card p-6 sm:p-8 rounded-xl">
+                    <p class="text-gray-300 italic mb-4">
+                        “I created a campus trivia night on Locali, and 100+ students showed up! It was a blast.”
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Student" class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-white">Maria, 2nd-Year Student</h4>
+                            <p class="text-gray-300 text-sm">Psychology</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-6 sm:p-8 rounded-xl">
+                    <p class="text-gray-300 italic mb-4">
+                        “My city cleanup event united students and locals, thanks to Locali’s reach.”
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Student" class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-white">Ali, 3rd-Year Student</h4>
+                            <p class="text-gray-300 text-sm">Environmental Science</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="testimonial-card p-6 sm:p-8 rounded-xl mx-auto max-w-2xl">
-                <p class="text-gray-300 italic mb-4">
-                    “I created a movie night on Locali and met students from three different countries. We’re still friends!”
+            <div class="demo-widget p-6 sm:p-8 rounded-xl">
+                <h3 class="text-xl sm:text-2xl font-bold mb-4 text-white text-center">Try Creating an Event</h3>
+                <p class="text-gray-300 mb-4 text-center">
+                    See how easy it is to spark a hyper-local event with Locali.
                 </p>
-                <div class="flex items-center">
-                    <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Student" class="w-10 h-10 rounded-full mr-4">
-                    <div>
-                        <h4 class="font-bold text-white">Emma, 2nd-Year Student</h4>
-                        <p class="text-gray-300 text-sm">International Relations</p>
-                    </div>
+                <!-- Placeholder for interactive demo widget -->
+                <div class="bg-gray-900 p-4 rounded-lg text-center">
+                    <p class="text-gray-300">[Interactive Demo: Simulate creating a campus event]</p>
                 </div>
             </div>
 
             <div class="text-center mt-8 sm:mt-12">
-                <a href="#download" class="bg-blue-500 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition">
-                    Download Now
+                <a href="#signup" class="bg-blue-500 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition">
+                    Create Your First Event
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- User Storyboard Section -->
-    <!-- Image Creation Prompt: Create a storyboard image (PNG, 800x400px) in a clean, modern flat design with Locali’s gradient (#3B82F6 to #8B5CF6). Depict Emma’s journey: 1) Feeling isolated on campus, 2) Using Locali on her smartphone to browse events, 3) Joining a photography meetup, 4) Meeting diverse peers and smiling. Include campus background, Locali app interface, and minimal captions like “Feeling alone,” “Discovering Locali,” “Joining a meetup,” “Making friends.” Use Adobe Illustrator, Figma, or Canva. -->
+    <!-- Trust & Safety Section -->
+    <section class="py-12 sm:py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">Safe & Trusted Events</span>
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+                    Your safety and privacy are our priority.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+                <div class="trust-card p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">Verified Events & Smart Algorithm</h3>
+                    <p class="text-gray-300">
+                        Every event is vetted to ensure quality and safety, so you can attend with confidence. Smart algorithm continuously refines event matching, creating a virtuous cycle of engagement.
+                    </p>
+                </div>
+                
+                <div class="trust-card p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">Privacy First</h3>
+                    <p class="text-gray-300">
+                        Your data stays secure with university-grade encryption and strict privacy controls.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emma’s Locali Journey Section -->
     <section class="py-12 sm:py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12 sm:mb-16">
@@ -493,7 +562,7 @@
                     <span class="gradient-text">Emma’s Locali Journey</span>
                 </h2>
                 <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                    Follow Emma as she uses Locali to find and connect with peers who share her passion for photography.
+                    Follow Emma as she transforms her campus experience with Locali.
                 </p>
             </div>
             
@@ -502,10 +571,10 @@
                     <img src="assets/images/emma-storyboard.png" alt="Emma's Locali Journey Storyboard" class="rounded w-full h-auto">
                 </div>
                 <div class="space-y-4 text-gray-300">
-                    <p><strong>1. Feeling Isolated:</strong> Emma, a first-year international student, feels lonely, struggling to find friends who share her love for photography.</p>
-                    <p><strong>2. Discovering Locali:</strong> She downloads Locali and browses events, finding a photography club meetup nearby.</p>
-                    <p><strong>3. Joining the Meetup:</strong> Emma joins the photography club event with a tap, connecting with other students.</p>
-                    <p><strong>4. Making Connections:</strong> At the meetup, Emma meets diverse peers, shares ideas, and forms lasting friendships.</p>
+                    <p><strong>1. Feeling Isolated:</strong> Emma, a first-year student, feels lonely, struggling to find friends who share her love for photography.</p>
+                    <p><strong>2. Discovering Locali:</strong> She downloads Locali and finds a photography meetup nearby.</p>
+                    <p><strong>3. Joining the Meetup:</strong> Emma attends the event, connecting with students and locals at a city gallery.</p>
+                    <p><strong>4. Making Connections:</strong> Emma forms lasting friendships, enriching her campus and city life.</p>
                 </div>
             </div>
             
@@ -514,6 +583,49 @@
                     Explore More Stories
                     <i class="fas fa-chevron-right ml-2"></i>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bridge Campus and City Section -->
+    <section class="py-12 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">Bridge Campus and City</span>
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+                    Locali connects student-led events with city activities, fostering vibrant communities.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-12">
+                <div class="solution-card p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">For Students & Residents</h3>
+                    <p class="text-gray-300">
+                        Create a campus art show open to locals or join a city music festival with peers.
+                    </p>
+                </div>
+                
+                <div class="solution-card p-6 sm:p-8 rounded-xl">
+                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">For City Partners</h3>
+                    <p class="text-gray-300">
+                        Host student discount nights or promote festivals to 6,000+ students, boosting business and engagement.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="testimonial-card p-6 sm:p-8 rounded-xl max-w-2xl mx-auto">
+                <p class="text-gray-300 italic mb-4">
+                    “Locali brought dozens of students to our open-mic night, boosting our café’s vibe!”
+                </p>
+                <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/women/70.jpg" alt="Business Owner" class="w-10 h-10 rounded-full mr-4">
+                    <div>
+                        <h4 class="font-bold text-white">Clara, Café Owner</h4>
+                        <p class="text-gray-300 text-sm">Lemgo Local Business</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -692,18 +804,18 @@
                         </div>
                         <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Event Creation & Discovery</h3>
                         <p class="text-gray-300">
-                            Easily find and create activities, from lectures to meetups.
+                            Easily create and find activities, from study groups to city festivals.
                         </p>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-xl hover-scale">
-                        <div class="feature-icon">
-                            <i class="fas fa-city"></i>
-                        </div>
-                        <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">City Integration</h3>
-                        <p class="text-gray-300">
-                            Connect campus life with local events and partnerships.
-                        </p>
+                  <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+                    <div class="feature-icon">
+                        <i class="fas fa-city"></i>
                     </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">City Integration</h3>
+                    <p class="text-gray-300">
+                        Connect campus life with the surrounding community through local events and partnerships.
+                    </p>
+                </div>
                     <div class="bg-gray-800 p-6 rounded-xl hover-scale">
                         <div class="feature-icon">
                             <i class="fas fa-qrcode"></i>
@@ -713,22 +825,14 @@
                             QR code check-ins for accurate event participation data.
                         </p>
                     </div>
+                    
                 </div>
 
                 <div class="lg:w-1/3 flex justify-center my-6 lg:my-0">
-                    <img src="assets/images/mobile-screenshot.png" alt="Locali App Screenshot" class="rounded-lg max-w-xs sm:max-w-sm lg:max-w-full h-auto">
+                    <img src="assets/images/event-creation-screen.png" alt="Locali event creation interface" class="rounded-lg max-w-xs sm:max-w-sm lg:max-w-full h-auto">
                 </div>
 
                 <div class="lg:w-1/3 flex flex-col gap-6">
-                    <div class="bg-gray-800 p-6 rounded-xl hover-scale">
-                        <div class="feature-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
-                        <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Interactive Maps</h3>
-                        <p class="text-gray-300">
-                            Visualize events and resources with real-time location data.
-                        </p>
-                    </div>
                     <div class="bg-gray-800 p-6 rounded-xl hover-scale">
                         <div class="feature-icon">
                             <i class="fas fa-comment-dots"></i>
@@ -740,19 +844,28 @@
                     </div>
                     <div class="bg-gray-800 p-6 rounded-xl hover-scale">
                         <div class="feature-icon">
-                            <i class="fas fa-utensils"></i>
+                            <i class="fas fa-map-marked-alt"></i>
                         </div>
-                        <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Cafeteria Menus</h3>
+                        <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Interactive Maps</h3>
                         <p class="text-gray-300">
-                            Real-time dining info with dietary filters.
+                            Visualize events and resources with real-time location data.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl hover-scale">
+                        <div class="feature-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Smart Notifications</h3>
+                        <p class="text-gray-300">
+                            Personalized alerts for events you’ll love.
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-8 sm:mt-12">
-                <a href="#download" class="bg-blue-500 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition">
-                    Download Now
+                <a href="#signup" class="bg-blue-500 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition">
+                    Create Your First Event
                 </a>
             </div>
         </div>
@@ -779,15 +892,15 @@
                     <ul class="space-y-4 text-gray-300">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
-                            <span>Overcome isolation and build meaningful connections</span>
+                            <span>Overcome isolation with vibrant, student-led events</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
-                            <span>Centralized access to all campus activities and resources</span>
+                            <span>Centralized access to all campus and city activities</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
-                            <span>Cultural exchange opportunities with international peers</span>
+                            <span>Cultural exchange with diverse peers and locals</span>
                         </li>
                     </ul>
                 </div>
@@ -804,11 +917,11 @@
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
-                            <span>White-label solution that matches university branding</span>
+                            <span>White-label solution with university branding</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
-                            <span>Integration with existing systems (LMS, cafeteria, etc.)</span>
+                            <span>Integration with LMS, cafeteria, and more</span>
                         </li>
                     </ul>
                 </div>
@@ -822,19 +935,19 @@
                 <ul class="space-y-4 text-gray-300">
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
-                        <span>Controlled access portal to reach student populations</span>
+                        <span>Portal to reach 6,000+ student populations</span>
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
-                        <span>Student discount program management</span>
+                        <span>Manage student discount programs</span>
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
-                        <span>Internship & job opportunity board</span>
+                        <span>Promote internships and job opportunities</span>
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
-                        <span>Civic engagement and volunteering opportunities</span>
+                        <span>Boost civic engagement and volunteering</span>
                     </li>
                 </ul>
             </div>
@@ -849,66 +962,32 @@
                     <span class="gradient-text">Locali in Action</span>
                 </h2>
                 <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                    See how Locali transforms campus life through these screenshots
+                    See how Locali transforms campus and city life
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
                 <div class="media-container p-6">
-                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">Web View</h3>
-                    <img src="assets/images/web-screenshot.png" alt="Locali web interface" class="rounded max-w-full h-auto">
+                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">Create Hyper-Local Events</h3>
+                    <img src="assets/images/event-creation-screen.png" alt="Event creation screen" class="rounded max-w-full h-auto">
                 </div>
                 
                 <div class="media-container p-6">
-                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">Mobile App</h3>
-                    <img src="assets/images/mobile-screenshot.png" alt="Locali mobile app" class="rounded-lg max-w-full h-auto">
+                    <h3 class="text-lg sm:text-xl font-bold mb-4 text-white">Discover City Events</h3>
+                    <img src="assets/images/city-event-screen.png" alt="City event screen" class="rounded-lg max-w-full h-auto">
                 </div>
             </div>
             
             <div class="media-container p-6 sm:p-8">
-                <h3 class="text-xl sm:text-2xl font-bold mb-6 text-center text-white">Screenshot Gallery</h3>
-                <div class="screenshot-gallery">
-                    <div class="screenshot-thumbnail">
-                        <img src="assets/images/discover-screen.png" alt="Event discovery screen" class="w-full h-auto">
-                    </div>
-                    <div class="screenshot-thumbnail">
-                        <img src="assets/images/menu-screen.png" alt="Mensa menu screen" class="w-full h-auto">
-                    </div>
-                    <div class="screenshot-thumbnail">
-                        <img src="assets/images/news-screen.png" alt="Campus news screen" class="w-full h-auto">
-                    </div>
-                    <div class="screenshot-thumbnail">
-                        <img src="assets/images/schedule-screen.png" alt="User schedule screen" class="w-full h-auto">
-                    </div>
-                    <div class="screenshot-thumbnail">
-                        <img src="assets/images/profile-screen.png" alt="User profile screen" class="w-full h-auto">
-                    </div>
+                <h3 class="text-xl sm:text-2xl font-bold mb-6 text-center text-white">Interactive Event Map</h3>
+                <img src="assets/images/event-location.png" alt="Interactive Event Map" class="rounded-lg max-w-full h-auto">
                 </div>
-            </div>
         </div>
     </section>
 
     <!-- Video Demo Section -->
     <section class="py-12 sm:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-                    <span class="gradient-text">See Locali in Motion</span>
-                </h2>
-                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                    Watch our prototype walkthrough to experience the platform
-                </p>
-            </div>
-            
-            <div class="media-container p-2 sm:p-4">
-                <div class="video-container">
-                    <video controls class="w-full">
-                        <source src="assets/videos/locali-demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12">
                 <div class="media-container p-6 text-center">
                     <i class="fas fa-mobile-alt text-4xl text-blue-400 mb-4"></i>
@@ -930,7 +1009,7 @@
                     <i class="fas fa-users text-4xl text-blue-400 mb-4"></i>
                     <h3 class="text-lg sm:text-xl font-bold mb-2 text-white">Social Features</h3>
                     <p class="text-gray-300">
-                        Connect students through the platform.
+                        Connect students through events and Q&A.
                     </p>
                 </div>
             </div>
@@ -983,7 +1062,7 @@
                         </div>
                     </div>
                     <p class="text-gray-300 italic mb-4">
-                        "Locali aligns perfectly with our visual identity and has proven to be an invaluable communication tool for our students and employees."
+                        "Locali aligns perfectly with our visual identity and has proven to be an invaluable tool for our students."
                     </p>
                     <div class="flex text-yellow-400">
                         <i class="fas fa-star"></i>
@@ -1003,7 +1082,7 @@
                         </div>
                     </div>
                     <p class="text-gray-300 italic mb-4">
-                        "Locali supports our students with a user-friendly platform. The cultural exchange features are particularly valuable for our international students."
+                        "Locali supports our students with a user-friendly platform. The cultural exchange features are invaluable."
                     </p>
                     <div class="flex text-yellow-400">
                         <i class="fas fa-star"></i>
@@ -1072,11 +1151,12 @@
                     Ready to Transform Your Campus Community?
                 </h2>
                 <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-                    Schedule a demo to see how Locali can work for your university
+                    Schedule a demo or start creating events today
                 </p>
-                <a href="#contact" class="bg-white text-blue-500 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition inline-block">
-                    Request Demo
-                </a>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-white text-blue-500 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition">Request Demo</a>
+                    <a href="#signup" class="bg-transparent border border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition">Create Your First Event</a>
+                </div>
             </div>
         </div>
     </section>
@@ -1089,7 +1169,7 @@
                     <span class="gradient-text">Download Locali</span>
                 </h2>
                 <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                    Get the Locali app for your device and start connecting with your campus community
+                    Start creating hyper-local events and connecting with your campus and city
                 </p>
             </div>
             
@@ -1103,6 +1183,11 @@
                         Download the Locali Android app.
                     </p>
                     <a href="assets/downloads/locali-android.apk" download class="bg-blue-500 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-600 transition">Download Now</a>
+                  
+                  <div class="text-center mt-8">
+                <p class="text-gray-300 mb-4">Scan to download instantly</p>
+                <img src="assets/images/qr-code.png" alt="Locali app QR code" class="mx-auto max-w-xs">
+            </div>
                 </div>
                 
                 <div class="bg-gray-800 p-6 sm:p-8 rounded-xl hover-scale text-center">
@@ -1114,6 +1199,11 @@
                         Get the Locali iOS app.
                     </p>
                     <a href="assets/downloads/locali-ios.ipa" download class="bg-blue-500 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-600 transition">Download Now</a>
+                  
+                  <div class="text-center mt-8">
+                <p class="text-gray-300 mb-4">Scan to download instantly</p>
+                <img src="assets/images/qr-code.png" alt="Locali app QR code" class="mx-auto max-w-xs">
+            </div>
                 </div>
                 
                 <div class="bg-gray-800 p-6 sm:p-8 rounded-xl hover-scale text-center">
@@ -1125,8 +1215,15 @@
                         Install the Locali Windows app.
                     </p>
                     <a href="assets/downloads/locali-windows.exe" download class="bg-blue-500 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-600 transition">Download Now</a>
+                  
+                  <div class="text-center mt-8">
+                <p class="text-gray-300 mb-4">Scan to download instantly</p>
+                <img src="assets/images/qr-code.png" alt="Locali app QR code" class="mx-auto max-w-xs">
+            </div>
                 </div>
             </div>
+            
+            
         </div>
     </section>
 
@@ -1205,8 +1302,7 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Footer -->
     <footer class="py-12 bg-gray-900 border-t border-gray-800">
@@ -1305,59 +1401,3 @@
             document.getElementById('cookieBanner').style.display = 'none';
             localStorage.setItem('cookiePreference', 'accepted');
         }
-        
-        function declineCookies() {
-            document.getElementById('cookieBanner').style.display = 'none';
-            localStorage.setItem('cookiePreference', 'declined');
-        }
-        
-        if (localStorage.getItem('cookiePreference')) {
-            document.getElementById('cookieBanner').style.display = 'none';
-        }
-        
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        const thumbnails = document.querySelectorAll('.screenshot-thumbnail img');
-        const lightbox = document.getElementById('lightbox');
-        const lightboxContent = document.getElementById('lightbox-content');
-        
-        thumbnails.forEach(thumbnail => {
-            thumbnail.addEventListener('click', function() {
-                lightboxContent.src = this.src;
-                lightbox.style.display = 'flex';
-            });
-        });
-        
-        function closeLightbox() {
-            lightbox.style.display = 'none';
-        }
-        
-        lightbox.addEventListener('click', function(e) {
-            if (e.target === lightbox) {
-                closeLightbox();
-            }
-        });
-        
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeLightbox();
-            }
-        });
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-</body>
-</html>
