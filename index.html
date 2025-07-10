@@ -1130,72 +1130,109 @@
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="py-12 sm:py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-                    <span class="gradient-text">Download Locali</span>
-                </h2>
-                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-                    Start creating hyper-local events and connecting with your campus and city
+<!-- Download Section -->
+<section id="download" class="py-12 sm:py-20 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                <span class="gradient-text">Download Locali</span>
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+                Start creating hyper-local events and connecting with your campus and city
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Android Download -->
+            <div class="bg-gray-800 p-6 sm:p-8 rounded-xl hover-scale text-center border border-gray-700">
+                <div class="feature-icon mx-auto">
+                    <i class="fab fa-android"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Android</h3>
+                <p class="text-gray-300 mb-6">
+                    Download the Locali Android app from Google Play Store
                 </p>
+                <a href="https://drive.google.com/uc?export=download&id=1UGzBvjrvPuLYzIz8CAeJgE7EXziZlKAq" 
+                   class="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-full font-medium hover:bg-green-700 transition-all duration-300 mb-6">
+                    <i class="fab fa-google-play mr-2"></i>
+                    Download APK
+                </a>
+                
+                <div class="text-center mt-6 pt-6 border-t border-gray-700">
+                    <p class="text-gray-400 text-sm mb-4">Scan QR code for instant download</p>
+                    <div class="qr-code mx-auto">
+                        <div class="qr-pattern"></div>
+                    </div>
+                </div>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
-    <div class="bg-gray-800 p-6 sm:p-8 rounded-xl hover-scale text-center">
-        <div class="feature-icon mx-auto">
-            <i class="fab fa-android"></i>
+            <!-- iOS Download -->
+            <div class="bg-gray-800 p-6 sm:p-8 rounded-xl hover-scale text-center border border-gray-700">
+                <div class="feature-icon mx-auto">
+                    <i class="fab fa-apple"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">iOS</h3>
+                <p class="text-gray-300 mb-6">
+                    Get the Locali iOS app from the App Store
+                </p>
+                <a href="assets/downloads/locali-ios.ipa" download 
+                   class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition-all duration-300 mb-6">
+                    <i class="fab fa-app-store-ios mr-2"></i>
+                    Download IPA
+                </a>
+                
+                <div class="text-center mt-6 pt-6 border-t border-gray-700">
+                    <p class="text-gray-400 text-sm mb-4">Scan QR code for instant download</p>
+                    <div class="qr-code mx-auto">
+                        <div class="qr-pattern"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Windows Download -->
+            <div class="bg-gray-800 p-6 sm:p-8 rounded-xl hover-scale text-center border border-gray-700">
+                <div class="feature-icon mx-auto">
+                    <i class="fab fa-windows"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Windows</h3>
+                <p class="text-gray-300 mb-6">
+                    Install the Locali Windows desktop app
+                </p>
+                <a href="assets/downloads/locali-windows.exe" download 
+                   class="inline-flex items-center bg-blue-500 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-600 transition-all duration-300 mb-6">
+                    <i class="fab fa-microsoft mr-2"></i>
+                    Download EXE
+                </a>
+                
+                <div class="text-center mt-6 pt-6 border-t border-gray-700">
+                    <p class="text-gray-400 text-sm mb-4">Scan QR code for instant download</p>
+                    <div class="qr-code mx-auto">
+                        <div class="qr-pattern"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Android</h3>
-        <p class="text-gray-300 mb-4">
-            Download the Locali Android app.
-        </p>
-        <a href="https://drive.google.com/uc?export=download&id=1UGzBvjrvPuLYzIz8CAeJgE7EXziZlKAq" class="bg-blue-500 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-600 transition">Download Now</a>
-      
-        <div class="text-center mt-8">
-            <p class="text-gray-300 mb-4">Scan to download instantly</p>
-            <img src="assets/images/qr-code.png" alt="Locali app QR code" class="mx-auto max-w-xs">
+        
+        <!-- Additional Download Options -->
+        <div class="text-center mt-12">
+            <p class="text-gray-400 mb-6">Available on all major platforms</p>
+            <div class="flex justify-center space-x-6">
+                <div class="platform-badge">
+                    <i class="fab fa-google-play text-2xl text-green-500"></i>
+                    <span class="text-sm text-gray-300 block mt-1">Google Play</span>
+                </div>
+                <div class="platform-badge">
+                    <i class="fab fa-app-store-ios text-2xl text-blue-500"></i>
+                    <span class="text-sm text-gray-300 block mt-1">App Store</span>
+                </div>
+                <div class="platform-badge">
+                    <i class="fab fa-microsoft text-2xl text-blue-400"></i>
+                    <span class="text-sm text-gray-300 block mt-1">Microsoft Store</span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-                
-                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl hover-scale text-center">
-                    <div class="feature-icon mx-auto">
-                        <i class="fab fa-apple"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">iOS</h3>
-                    <p class="text-gray-300 mb-4">
-                        Get the Locali iOS app.
-                    </p>
-                    <a href="assets/downloads/locali-ios.ipa" download class="bg-blue-500 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-600 transition">Download Now</a>
-                  
-                  <div class="text-center mt-8">
-                <p class="text-gray-300 mb-4">Scan to download instantly</p>
-                <img src="assets/images/qr-code.png" alt="Locali app QR code" class="mx-auto max-w-xs">
-            </div>
-                </div>
-                
-                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl hover-scale text-center">
-                    <div class="feature-icon mx-auto">
-                        <i class="fab fa-windows"></i>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-3 text-white">Windows</h3>
-                    <p class="text-gray-300 mb-4">
-                        Install the Locali Windows app.
-                    </p>
-                    <a href="assets/downloads/locali-windows.exe" download class="bg-blue-500 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-600 transition">Download Now</a>
-                  
-                  <div class="text-center mt-8">
-                <p class="text-gray-300 mb-4">Scan to download instantly</p>
-                <img src="assets/images/qr-code.png" alt="Locali app QR code" class="mx-auto max-w-xs">
-            </div>
-                </div>
-            </div>
-            
-            
-        </div>
-    </section>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-12 sm:py-20">
